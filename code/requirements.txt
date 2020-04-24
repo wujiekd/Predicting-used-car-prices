@@ -1,0 +1,8 @@
+#操作系统:macOS Catalina 10.15.4
+#Python的版本:3.7.6
+tensorflow==2.1.0
+scikit-learn==0.22.1
+lightgbm==2.3.1
+pandas==1.0.2
+numpy==1.18.1
+catboost==0.22
