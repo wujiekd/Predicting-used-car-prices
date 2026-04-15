@@ -1,6 +1,7 @@
 ## 基础工具
 import warnings
-warnings.filterwarnings('ignore')
+warnings.filterwarnings('ignore', category=FutureWarning)
+warnings.filterwarnings('ignore', category=DeprecationWarning, module='sklearn')
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import KFold

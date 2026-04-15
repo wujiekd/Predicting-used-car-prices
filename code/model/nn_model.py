@@ -1,6 +1,7 @@
 ## 基础工具
 import warnings
-warnings.filterwarnings('ignore')
+warnings.filterwarnings('ignore', category=FutureWarning)
+warnings.filterwarnings('ignore', category=DeprecationWarning, module='sklearn')
 import tensorflow as tf
 import tensorflow.keras.backend as K
 from tensorflow_core.python.keras.callbacks import LearningRateScheduler
