@@ -1,6 +1,7 @@
 #导入需要使用的库
 import warnings
-warnings.filterwarnings('ignore')
+warnings.filterwarnings('ignore', category=FutureWarning)
+warnings.filterwarnings('ignore', category=DeprecationWarning, module='sklearn')
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
